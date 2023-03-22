@@ -1,0 +1,4 @@
+ID NOMBRE         APELLIDO       DNI     
+1  JULIETA        CASTILLO       12341234
+2  JULIETA        CASTILLO       12341234
+     

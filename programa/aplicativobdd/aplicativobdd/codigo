@@ -1,0 +1,45 @@
+while(reader != -1){ //Si llega a -1 quiere decir que llego al final del archivo
+                caracter = (char)reader; //guardamos cada caracter que leemos 
+                txt = txt + String.valueOf(caracter); //guardamos los caracteres en una variable
+                reader = fr.read(); //leemos otra ves
+                repeticiones+=1; //contamos la cantidad de ves que leemos un caracter
+                carac+=1; //cuanta cada caracter de un artributo
+                if(carac == n[indice]){ //Si carac == n[indice] quiere decir que se leyo un registro
+                    if(indice == 0){ 
+                        reg = Integer.valueOf(txt.trim()); //lee la id
+                    }
+                    if(busqcampo.equals(txt.trim())){ //Se encontro el dato que se buscaba
+                        System.out.print("campo encontrado: "+txt.trim()+ "\n");
+                        return reg; //De volvemos la id del registro en donde se encontro
+                    }
+                    txt = ""; // vaciamos la variable
+                    indice+=1; //pasamso el siguiente indice
+                    carac = 0; //vaciamos la variable
+                }
+                if(repeticiones == espacio){ //Si repeticiones == espacio significa que se leyo un registro completo
+                    repeticiones = 0; //declaramos de nuevo 0
+                    id+=1; //representa la id de cada registro, si se lee un registro completo sumamos uno 
+                }
+                if(indice >= n.length){ //si indice supera n o es igual, se leyeron todos los elemento  
+                    System.out.println("entro 2");
+                    indice = 0; //se reinicia
+                }
+            }
+            return -1;
+
+
+
+
+
+            char caracter;
+            int repeticiones = 0;
+            
+            for(int i=0; i < n.length; i++){ espacio = espacio + n[i];}
+            
+            while(reader != -1){ //Si llega a -1 quiere decir que llego al final del archivo
+                caracter = (char)reader; //guardamos cada caracter que leemos 
+                txt = txt + String.valueOf(caracter); //guardamos los caracteres en una variable
+                reader = fr.read(); //leemos otra ves
+            }
+
+            System.out.println(txt + "-tamaño: " + txt.length());

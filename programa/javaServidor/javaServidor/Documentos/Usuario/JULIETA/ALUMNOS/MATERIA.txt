@@ -1,0 +1,2 @@
+ID NOMBRE              PROFESOR       AULA      
+1  MATEMÁTICA          PROFESOR1      105       

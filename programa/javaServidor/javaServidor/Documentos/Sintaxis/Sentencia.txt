@@ -1,0 +1,7 @@
+CONNECT USER /*nombreDeUsuario*/ /*contraseña*/ ;
+CREATE USER /*nombreDeUsuario*/ /*contraseña*/ ;
+CREATE TABLE /*nombreDeUsuario*/ < /*nombreDeBaseDeDatos*/ < /*nombreDeLaTabla*/ ( /*col,col*/ : /*tamaño*/ ) ;
+CREATE DATA_BASE /*nombreDeUsuario*/ < /*nombreDeBaseDeDatos*/ ;
+INSERT /*nombreDeUsuario*/ < /*nombreDeBaseDeDatos*/ < /*nombreDeLaTabla*/ ( /*col,col*/ ) ;
+SELECT * FROM /*nombreDeUsuario*/ < /*nombreDeBaseDeDatos*/ < /*nombreDeLaTabla*/ ;
+DROP TABLE /*nombreDeUsuario*/ < /*nombreDeBaseDeDatos*/ < /*nombreDeLaTabla*/ ;
